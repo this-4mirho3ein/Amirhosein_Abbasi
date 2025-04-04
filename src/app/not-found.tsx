@@ -149,7 +149,7 @@ export default function NotFound() {
                 isDarkTheme ? "text-gray-300" : "text-gray-600"
               }`}
             >
-              Oops! Looks like the page you're looking for doesn't exist or has
+              Oops! Looks like the page you are looking for doesnt exist or has
               been moved.
             </p>
 
