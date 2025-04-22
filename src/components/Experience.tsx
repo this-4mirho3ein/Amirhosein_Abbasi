@@ -22,14 +22,7 @@ const experiences: Experience[] = [
     company: "Hantana",
     description:
       "In this site, the admin panel and user dashboard were designed using React, and then all authentication pages were refactored. We also worked to improve the site's performance using React hooks and DSA .",
-    skills: [
-      "React",
-      "Tailwind",
-      "ShadcnUI",
-      "DSA",
-      "Redux",
-      "TypeScript",
-    ],
+    skills: ["React", "Tailwind", "ShadcnUI", "DSA", "Redux", "TypeScript"],
   },
   {
     id: 2,
@@ -38,7 +31,14 @@ const experiences: Experience[] = [
     company: "Rental-Pulse",
     description:
       "In this site, which is a full-stack site and is in the real-state domain, I designed this site using React and Next. I used Typescript to comply with the type safety issue, and I used MongoDb, and Prisma to manage data, and finally I used Next-auth for the authentication section..",
-    skills: ["Next.JS", "React.js", "TypeScript", "MongoDB", "Next-Auth" , 'Prisma'],
+    skills: [
+      "Next.JS",
+      "React.js",
+      "TypeScript",
+      "MongoDB",
+      "Next-Auth",
+      "Prisma",
+    ],
   },
   {
     id: 3,
@@ -57,6 +57,23 @@ const experiences: Experience[] = [
     description:
       "I designed this site, which is a personal site, using next.js, but I also used Typescript and Framer for special motions.",
     skills: ["Next.JS", "TailwindCSS", "TypeScript", "Framer Motion"],
+  },
+  {
+    id: 5,
+    period: "April 2025",
+    title: "Front-End Developer",
+    company: "Ecommerce",
+    description:
+      "I designed this site, which is a ecommerce site, and I used Redux for my state manegments and Axios for data fetching and for my authorization also I used JWT token .",
+    skills: [
+      "Next.JS",
+      "TailwindCSS",
+      "TypeScript",
+      "Redux",
+      "Axios",
+      "Json-server",
+      "JWT",
+    ],
   },
 ];
 

@@ -36,6 +36,23 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Ecommerce-website",
+    description:
+      "This is a Ecommerce website in persian language that I use Json server for my data and use redux and axios for data managment and data fetching",
+    technologies: [
+      "Next.JS",
+      "TailwindCSS",
+      "TypeScript",
+      "Json server",
+      "Axios",
+      "Redux",
+      "jwt",
+    ],
+    role: "Next.JS Developer",
+    githubUrl: "https://github.com/this-4mirho3ein/ecommerce/",
+  },
+  {
+    id: 3,
     title: "Meals",
     description: "A platform for sharing Food recipes",
     technologies: ["React.JS", "Next.JS", "Typescript"],
@@ -44,7 +61,7 @@ const projects: Project[] = [
     liveUrl: "https://meals-app-plum.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "News-Pj",
     description: "See and add News and explore them .",
     technologies: ["Next.JS", "React.js", "TypeScript"],
@@ -53,7 +70,7 @@ const projects: Project[] = [
     liveUrl: "https://news-eosin-mu.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Personal-Portfolio",
     description: "Personal Portfolio to present yourself and show your skills",
     technologies: ["Next.js", "React.JS", "TailwindCSS", "TypeScript"],
@@ -62,7 +79,7 @@ const projects: Project[] = [
     liveUrl: "https://amirhosein-devportfolio.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Music Player",
     description: "Find Music from all over the world",
     technologies: ["Next.js", "React.JS", "TailwindCSS", "TypeScript"],
@@ -70,7 +87,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/yourusername/imagica",
   },
   {
-    id: 6,
+    id: 7,
     title: "Moovito",
     description: "A web application for TMDB movie information",
     technologies: ["Next.js", "React.JS", "TailwindCSS"],
@@ -78,7 +95,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/this-4mirho3ein/Movie-app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Todo",
     description: "Todo app for handling your works",
     technologies: ["Next.JS", "Typescript", "TypeScript"],
