@@ -105,19 +105,58 @@ const projects: Project[] = [
 ];
 
 const getTechColor = (tech: string, isDark: boolean): string => {
+  if (isDark) {
+    return "#FFFFFF";
+  }
+
+  const lightModeColors: { [key: string]: string } = {
+    "Next.JS": "#000000",
+    "React.JS": "#087EA4",
+    TailwindCSS: "#0A5561",
+    TypeScript: "#235A97",
+    Typescript: "#235A97",
+    Prisma: "#2D3748",
+    MongoDB: "#10532A",
+    PostgreSQL: "#0D4261",
+    MySQL: "#1A5585",
+    "Express.JS": "#000000",
+    "Server Actions": "#991B1B",
+    "Json server": "#854D0E",
+    "Hono.JS": "#312E81",
+    DrizzleORM: "#7C2D12",
+    "@tanstack/query": "#991B1B",
+    Axios: "#581C87",
+    Redux: "#4C1D95",
+    JWT: "#701A75",
+    "Next-Auth": "#991B1B",
+    Api: "#3E1F5A",
+  };
+
+  return lightModeColors[tech] || "#000000";
+};
+
+const getTechBgColor = (tech: string, isDark: boolean): string => {
   const colors: { [key: string]: { light: string; dark: string } } = {
-    "Next.JS": { light: "#000000", dark: "#FFFFFF" },
-    "React.JS": { light: "#61DAFB", dark: "#61DAFB" },
-    TailwindCSS: { light: "#06B6D4", dark: "#06B6D4" },
-    TypeScript: { light: "#3178C6", dark: "#3178C6" },
-    Prisma: { light: "#2D3748", dark: "#5A67D8" },
-    PostgreSQL: { light: "#336791", dark: "#4A90E2" },
-    MySQL: { light: "#4479A1", dark: "#67A3D9" },
-    "Express.JS": { light: "#000000", dark: "#FFFFFF" },
-    "Hono.JS": { light: "#5865F2", dark: "#7289DA" },
-    DrizzleORM: { light: "#FF4F00", dark: "#FF7B3A" },
-    "@tanstack/query": { light: "#FF4154", dark: "#FF6B7D" },
-    Api: { light: "#5A29E4", dark: "#8E6CFF" },
+    "Next.JS": { light: "#FFFFFF", dark: "#111111" },
+    "React.JS": { light: "#E6F6FF", dark: "#0B2945" },
+    TailwindCSS: { light: "#E6FFFA", dark: "#0F3443" },
+    TypeScript: { light: "#E6F1FF", dark: "#1A365D" },
+    Typescript: { light: "#E6F1FF", dark: "#1A365D" },
+    Prisma: { light: "#EEF2FF", dark: "#2D3748" },
+    MongoDB: { light: "#ECFDF5", dark: "#064E3B" },
+    PostgreSQL: { light: "#EFF6FF", dark: "#172554" },
+    MySQL: { light: "#E0F2FE", dark: "#075985" },
+    "Express.JS": { light: "#F3F4F6", dark: "#1F2937" },
+    "Server Actions": { light: "#FEE2E2", dark: "#7F1D1D" },
+    "Json server": { light: "#FEF9C3", dark: "#422006" },
+    "Hono.JS": { light: "#EEF2FF", dark: "#3730A3" },
+    DrizzleORM: { light: "#FFF7ED", dark: "#7C2D12" },
+    "@tanstack/query": { light: "#FEE2E2", dark: "#7F1D1D" },
+    Axios: { light: "#F3E8FF", dark: "#581C87" },
+    Redux: { light: "#F5F3FF", dark: "#4C1D95" },
+    JWT: { light: "#FAE8FF", dark: "#701A75" },
+    "Next-Auth": { light: "#FEE2E2", dark: "#7F1D1D" },
+    Api: { light: "#F3E8FF", dark: "#581C87" },
   };
 
   return colors[tech]
@@ -125,8 +164,8 @@ const getTechColor = (tech: string, isDark: boolean): string => {
       ? colors[tech].dark
       : colors[tech].light
     : isDark
-    ? "#FFFFFF"
-    : "#000000";
+    ? "#1F2937"
+    : "#F9FAFB";
 };
 
 const MyProjects = () => {
@@ -161,7 +200,7 @@ const MyProjects = () => {
       >
         <HiOutlineBriefcase
           size={20}
-          className={isDarkTheme ? "text-yellow-500" : "text-blue-500"}
+          className={isDarkTheme ? "text-[#4D6DFF]" : "text-blue-500"}
         />
         <h1
           className={`text-xl font-bold ${
@@ -179,7 +218,7 @@ const MyProjects = () => {
             className={`border rounded-lg overflow-hidden
                       ${
                         isDarkTheme
-                          ? "bg-gray-800/80 border-gray-700 hover:border-yellow-700/70"
+                          ? "bg-gray-800/80 border-gray-700 hover:border-[#3F5BF5]/70"
                           : "bg-white/90 border-gray-200 hover:border-blue-400/70"
                       } 
                       hover:shadow-xl backdrop-blur-sm`}
@@ -196,7 +235,7 @@ const MyProjects = () => {
                 <span
                   className={`px-2 py-1 text-xs rounded-full ${
                     isDarkTheme
-                      ? "bg-yellow-600/20 text-yellow-400"
+                      ? "bg-[#4D6DFF]/20 text-[#5C7CFF]"
                       : "bg-blue-100 text-blue-800"
                   }`}
                 >
@@ -215,13 +254,20 @@ const MyProjects = () => {
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-xs px-3 py-1 rounded-full"
+                    className="text-xs font-medium px-3 py-1 rounded-full transition-all duration-200 hover:scale-105"
                     style={{
                       backgroundColor: isDarkTheme
-                        ? "rgba(55, 65, 81, 0.8)"
-                        : "rgba(243, 244, 246, 0.8)",
+                        ? getTechBgColor(tech, isDarkTheme)
+                        : getTechBgColor(tech, isDarkTheme),
                       color: getTechColor(tech, isDarkTheme),
-                      border: `1px solid ${getTechColor(tech, isDarkTheme)}`,
+                      border: `1px solid ${
+                        isDarkTheme
+                          ? "#ffffff40"
+                          : getTechColor(tech, isDarkTheme)
+                      }`,
+                      boxShadow: isDarkTheme
+                        ? `0 0 8px rgba(255, 255, 255, 0.15)`
+                        : "none",
                     }}
                   >
                     {tech}

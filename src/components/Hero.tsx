@@ -86,7 +86,7 @@ const Hero = () => {
             <Button
               className={`${
                 isDarkTheme
-                  ? "bg-yellow-800 hover:bg-amber-600"
+                  ? "bg-[#4D6DFF] hover:bg-[#5C7CFF]"
                   : "bg-blue-800 hover:bg-blue-600"
               } rounded-xl px-4 py-5 cursor-pointer text-white max-w-fit flex items-center gap-2  hover:shadow-lg  ${
                 isVisible
@@ -107,7 +107,7 @@ const Hero = () => {
           <div className="relative">
             <div
               className={`absolute inset-0 rounded-full ${
-                isDarkTheme ? "bg-yellow-600/10" : "bg-blue-500/10"
+                isDarkTheme ? "bg-[#4D6DFF]/10" : "bg-blue-500/10"
               } blur-xl transform scale-90 animate-pulse`}
             ></div>
             <div
@@ -123,7 +123,7 @@ const Hero = () => {
                 className={`rounded-full relative transition-all duration-500 hover:scale-105 transform -z-0 ${
                   isDarkTheme ? "ring-2 ring-gray-700 shadow-md" : "shadow-md"
                 } ${
-                  isDarkTheme ? "shadow-yellow-700/20" : "shadow-blue-700/20"
+                  isDarkTheme ? "shadow-[#3F5BF5]/20" : "shadow-blue-700/20"
                 }`}
                 width={320}
                 height={320}

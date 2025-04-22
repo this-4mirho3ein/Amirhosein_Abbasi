@@ -113,7 +113,7 @@ const Experiences = () => {
       >
         <FaBriefcase
           size={20}
-          className={isDarkTheme ? "text-yellow-500" : "text-blue-500"}
+          className={isDarkTheme ? "text-[#4D6DFF]" : "text-blue-500"}
         />
         <h1
           className={`text-xl font-bold ${
@@ -156,7 +156,7 @@ const Experiences = () => {
             <div className="flex items-center mb-1.5">
               <HiCalendar
                 className={
-                  isDarkTheme ? "text-yellow-500 mr-2" : "text-blue-500 mr-2"
+                  isDarkTheme ? "text-[#4D6DFF] mr-2" : "text-blue-500 mr-2"
                 }
               />
               <span

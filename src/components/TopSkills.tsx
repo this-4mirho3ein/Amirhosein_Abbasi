@@ -222,7 +222,7 @@ const TopSkills = () => {
         <HiOutlineRocketLaunch
           size={20}
           className={`${
-            isDarkTheme ? "text-yellow-500" : "text-blue-500"
+            isDarkTheme ? "text-[#4D6DFF]" : "text-blue-500"
           } animate-pulse`}
         />
         <h1

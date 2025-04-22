@@ -59,7 +59,7 @@ const Header = () => {
           <Link
             href={`/`}
             className={`btn btn-ghost ${
-              isDarkTheme ? "text-yellow-600" : "text-blue-500"
+              isDarkTheme ? "text-[#4D6DFF]" : "text-blue-500"
             } text-2xl `}
           >
             {"<Amirhosein/>"}

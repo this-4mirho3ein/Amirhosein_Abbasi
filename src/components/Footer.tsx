@@ -56,7 +56,7 @@ const Footer = () => {
                 relative overflow-hidden group rounded-full p-3
                 ${
                   isDarkTheme
-                    ? "bg-yellow-600 hover:bg-yellow-500 text-white"
+                    ? "bg-[#4D6DFF] hover:bg-[#5C7CFF] text-white"
                     : "bg-blue-800 hover:bg-blue-700 text-white"
                 }
                 transition-all duration-300 transform
@@ -126,7 +126,7 @@ const Footer = () => {
             <Link href="/">
               <div
                 className={`text-xl font-bold ${
-                  isDarkTheme ? "text-yellow-600" : "text-blue-500"
+                  isDarkTheme ? "text-[#4D6DFF]" : "text-blue-500"
                 }`}
               >
                 {"<Amirhosein/>"}

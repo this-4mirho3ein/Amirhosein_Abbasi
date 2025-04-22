@@ -32,7 +32,7 @@ export default function NotFound() {
             <div className="relative mb-8">
               <h1
                 className={`text-9xl font-bold glitch-text ${
-                  isDarkTheme ? "text-yellow-600" : "text-blue-600"
+                  isDarkTheme ? "text-[#4D6DFF]" : "text-blue-600"
                 }`}
                 data-text="404"
               >
@@ -158,7 +158,7 @@ export default function NotFound() {
                 href="/"
                 className={`flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium transition-all ${
                   isDarkTheme
-                    ? "bg-yellow-600 hover:bg-yellow-500 text-white"
+                    ? "bg-[#4D6DFF] hover:bg-[#5C7CFF] text-white"
                     : "bg-blue-800 hover:bg-blue-700 text-white"
                 }`}
               >
