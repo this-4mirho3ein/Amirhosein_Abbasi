@@ -17,15 +17,40 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
+    period: "Nov 2024 ~ Now",
+    title: "Front-End Developer",
+    company: "Elan",
+    description:
+      "As frontend developers, we are building a real estate website that includes separate panels for Admin, User, and Agency. The project is developed using Next.js. For the User panel, we are using ShadCN UI, while the Admin and Agency panels utilize Hero UI for their interfaces. In terms of state management, we are leveraging both TanStack Query and Redux Toolkit to handle data fetching and global state efficiently.",
+    skills: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "ShadcnUI",
+      "Tanstack Query",
+      "Redux",
+    ],
+  },
+  {
+    id: 2,
     period: "May 2024 ~ Aug 2024",
     title: "Front-End Developer",
     company: "Hantana",
     description:
-      "In this site, the admin panel and user dashboard were designed using React, and then all authentication pages were refactored. We also worked to improve the site's performance using React hooks and DSA .",
-    skills: ["React", "Tailwind", "ShadcnUI", "DSA", "Redux", "TypeScript"],
+      "In this site, the admin panel and user dashboard were designed using Next.js, and then all authentication pages were refactored. We also worked to improve the site's performance using DSA .",
+    skills: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "ShadcnUI",
+      "DSA",
+      "Redux",
+      "TypeScript",
+    ],
   },
   {
-    id: 2,
+    id: 3,
     period: "Feb 2025",
     title: "Front-End Developer",
     company: "Rental-Pulse",
@@ -41,7 +66,7 @@ const experiences: Experience[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     period: "Jan 2025",
     title: "Front-End Developer",
     company: "Meals-app",
@@ -50,7 +75,7 @@ const experiences: Experience[] = [
     skills: ["Next.JS", "React.JS", "TypeScript", "Server Actions"],
   },
   {
-    id: 4,
+    id: 5,
     period: "Jan 2025",
     title: "Front-End Developer",
     company: "Portfolio",
@@ -59,7 +84,7 @@ const experiences: Experience[] = [
     skills: ["Next.JS", "TailwindCSS", "TypeScript", "Framer Motion"],
   },
   {
-    id: 5,
+    id: 6,
     period: "April 2025",
     title: "Front-End Developer",
     company: "Ecommerce",
