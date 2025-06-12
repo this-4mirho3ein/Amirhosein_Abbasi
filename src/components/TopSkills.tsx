@@ -12,6 +12,8 @@ import {
   SiRedux,
   SiShadcnui,
   SiTailwindcss,
+  SiReactquery,
+  SiHero,
 } from "react-icons/si";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -120,6 +122,22 @@ const myskills: Skill[] = [
     color: "#000000",
     darkColor: "#FFFFFF",
     url: "https://ui.shadcn.com/",
+  },
+  {
+    name: "Tanstack Query",
+    icon: <SiReactquery />,
+    level: "medium",
+    color: "#FF4154",
+    darkColor: "#FF4154",
+    url: "https://tanstack.com/query/latest",
+  },
+  {
+    name: "Hero UI",
+    icon: <SiHero />,
+    level: "medium",
+    color: "#6366F1",
+    darkColor: "#818CF8",
+    url: "https://heroicons.com/",
   },
   {
     name: "Prisma",
