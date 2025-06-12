@@ -13,8 +13,8 @@ import {
   SiShadcnui,
   SiTailwindcss,
   SiReactquery,
-  SiHero,
 } from "react-icons/si";
+import { HiTemplate } from "react-icons/hi";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -133,7 +133,7 @@ const myskills: Skill[] = [
   },
   {
     name: "Hero UI",
-    icon: <SiHero />,
+    icon: <HiTemplate />,
     level: "medium",
     color: "#6366F1",
     darkColor: "#818CF8",
